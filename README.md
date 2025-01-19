@@ -8,7 +8,7 @@ LLM API:en käytön harjoittelua.
 
  2. Luo juurikansioon .env-tiedosto ja määrittele sen sisällöksi
 
-        GEMINI_KEY=<YOUR_API_KEY_HERE>
+        GEMINI_API_KEY=<YOUR_API_KEY_HERE>
 
  3. Asenna Poetry
 
