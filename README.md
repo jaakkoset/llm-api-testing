@@ -13,3 +13,17 @@ LLM API:en käytön harjoittelua.
  3. Asenna Poetry
 
         poetry install
+
+## Käyttö
+
+Ohjelman ajaminen
+
+    poetry run invoke start
+
+Testien ajaminen
+
+    poetry run invoke test
+
+Pylint-testaus
+
+    poetry run invoke lint
