@@ -1,6 +1,7 @@
 # LLM API testing
 
 [![GHA workflow badge](https://github.com/jaakkoset/llm-api-testing/workflows/CI/badge.svg)](https://github.com/jaakkoset/llm-api-testing/actions)
+[![codecov](https://codecov.io/gh/jaakkoset/llm-api-testing/graph/badge.svg?token=0ml9x1ceqR)](https://codecov.io/gh/jaakkoset/llm-api-testing)
 
 LLM API:en käytön harjoittelua.
 
