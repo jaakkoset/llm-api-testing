@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: poetry install --no-root
       - name: Run tests
-        run: poetry run pytest
+        run: poetry run coverage run --branch -m pytest
       - name: Create coverage report
         run: poetry run coverage xml
       - name: Upload coverage reports to Codecov
