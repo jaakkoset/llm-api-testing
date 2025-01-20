@@ -4,6 +4,14 @@ import google.generativeai as genai
 
 
 class Gemini:
+    """API for Gemini.
+
+    Methods
+    -------
+        get_llm_response(prompt):
+            Returns the response to the given prompt.
+    """
+
     def __init__(self):
         self.__GEMINI_API_KEY = self.__load_key()
         self.__ai_model = self.__configure_ai()
