@@ -1,7 +1,7 @@
-from app import Gemini
+from app import LLM
 
 user_prompt = input("Name of company you want to study: ")
-llm = Gemini(user_prompt)
+llm = LLM(user_prompt)
 
-response = llm.get_llm_response()
+response = llm.generate_response()
 print(response)
