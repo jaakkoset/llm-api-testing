@@ -1,5 +1,7 @@
 # LLM API testing
 
+[![GHA workflow badge](https://github.com/jaakkoset/llm-api-testing/workflows/CI/badge.svg)](https://github.com/jaakkoset/llm-api-testing/actions)
+
 LLM API:en käytön harjoittelua.
 
 ## Asennus
