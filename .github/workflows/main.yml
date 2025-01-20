@@ -23,3 +23,9 @@ jobs:
         run: poetry install --no-root
       - name: Run tests
         run: poetry run pytest
+      - name: Create coverage report
+        run: poetry run coverage xml
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
