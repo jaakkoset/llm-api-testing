@@ -2,5 +2,10 @@ coverage:
   status:
     project:
       default:
-        target: 90%
-        threshold: 1%
+        # No overall test coverage threshold is enforced for the project.
+        target: auto
+    patch:
+      default:
+        # Set a constant diff hit target of 70%. 
+        # This is the test coverage that new code must achieve.
+        target: 70%
