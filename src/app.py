@@ -24,4 +24,19 @@ class LLM:
             f"to create simulated user profiles for it? Please answer only YES or NO"
         )
         response = self.llm.get_response(prompt)
-        return response
+        answer = self.parse_yes_no_answer(response)
+        return answer
+
+    def parse_yes_no_answer(self, answer) -> bool:
+        """Determine whether Gemini answered YES or NO. Raise ValueError if the answer
+        is something else
+
+        Returns
+        -------
+            True if answer is YES and False if it is NO"""
+        answer = answer.replace("\n", "")
+        if answer == "YES":
+            return True
+        if answer == "NO":
+            return False
+        raise ValueError("Gemini should have answered YES or NO. It aswered", answer)
