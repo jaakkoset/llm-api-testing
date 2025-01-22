@@ -13,7 +13,7 @@ class LLM:
             prompt = f"simulate three future customer profiles for {company}"
             return self.llm.get_response(prompt)
         return (
-            f"Customer profiles could not be simulated for the give company {company}"
+            f"Customer profiles could not be simulated for the given company {company}"
         )
 
     def company_is_valid(self, company) -> bool:
