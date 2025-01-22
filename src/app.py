@@ -1,7 +1,7 @@
 from gemini import Gemini
 
 
-class LLM:
+class Simulator:
     def __init__(self, llm=Gemini()):
         self.llm = llm
 

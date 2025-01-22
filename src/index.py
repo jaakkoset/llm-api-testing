@@ -1,8 +1,8 @@
-from app import LLM
+from app import Simulator
 
 company = input("Name of company you want to study: ")
 print("\nSimulating three customers...\n")
-llm = LLM()
+simulator = Simulator()
 
-response = llm.simulate_customers(company)
+response = simulator.simulate_customers(company)
 print(response)
