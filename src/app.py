@@ -6,11 +6,15 @@ class LLM:
         self.llm = llm
 
     def simulate_customers(self, company) -> str:
-        """Returns descriptions for three simulated customers for the given company"""
+        """Returns descriptions for three simulated customers for the given company, if
+        the company name is deemed valid."""
         company_is_valid = self.company_is_valid(company)
-        print(company_is_valid)
-        prompt = f"simulate three future customer profiles for {company}"
-        return self.llm.get_response(prompt)
+        if company_is_valid:
+            prompt = f"simulate three future customer profiles for {company}"
+            return self.llm.get_response(prompt)
+        return (
+            f"Customer profiles could not be simulated for the give company {company}"
+        )
 
     def company_is_valid(self, company) -> bool:
         """Asks Gemini if it is comfortable with creating user profiles for the given
