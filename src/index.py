@@ -1,7 +1,8 @@
 from app import LLM
 
-user_prompt = input("Name of company you want to study: ")
+company = input("Name of company you want to study: ")
+print("\nSimulating three customers...\n")
 llm = LLM()
 
-response = llm.generate_response(user_prompt)
+response = llm.simulate_customers(company)
 print(response)
