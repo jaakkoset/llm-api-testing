@@ -12,9 +12,7 @@ class Simulator:
         if company_is_valid:
             prompt = f"simulate three future customer profiles for {company}"
             return self.llm.get_response(prompt)
-        return (
-            f"Customer profiles could not be simulated for the given company {company}"
-        )
+        return f"Customer profiles could not be simulated for the given company {company}\n"
 
     def company_is_valid(self, company) -> bool:
         """Asks Gemini if it is comfortable with creating user profiles for the given

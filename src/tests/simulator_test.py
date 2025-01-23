@@ -12,7 +12,7 @@ class TestSimulator(unittest.TestCase):
         self.mock_gemini.get_response.return_value = "NO"
         response = self.simulator.simulate_customers("Mokia")
         should_be = (
-            "Customer profiles could not be simulated for the given company Mokia"
+            "Customer profiles could not be simulated for the given company Mokia\n"
         )
         self.assertEqual(should_be, response)
 
