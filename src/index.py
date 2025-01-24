@@ -6,5 +6,3 @@ simulator = Simulator()
 
 response = simulator.simulate_customers(company)
 print(response)
-
-test_list = ["a","a","a","a","a","a","a","a","a","a","a","a","a","a",]
