@@ -1,7 +1,8 @@
-from app import LLM
+from app import Simulator
 
-user_prompt = input("Name of company you want to study: ")
-llm = LLM()
+company = input("Name of company you want to study: ")
+print("\nSimulating three customers...\n")
+simulator = Simulator()
 
-response = llm.generate_response(user_prompt)
+response = simulator.simulate_customers(company)
 print(response)
