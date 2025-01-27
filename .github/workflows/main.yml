@@ -16,8 +16,10 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install Poetry
+      - working-directory: llm-api-testing/
         run: pip install poetry
       - name: Install dependencies
+      - working-directory: llm-api-testing/
         run: poetry install --no-root
       - name: Run tests
         run: poetry run pytest
